@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1>About me (Kevin)</h1>
+    <div>
+        <h2>Hi, I 'm Kevin</h2>
+        <p>I am 20 years old, I 'm currently a university student, I have 3 cats</p>
+        <h4>Likes:</h4>
+        <ul>
+            <li>Play basketball</li>
+            <li>Play the guitar</li>
+            <li>Listen to music</li>
+            <li>Read books</li>
+            <li>Play video games</li>
+            <ul>Favorite videogames:</ul>
+                <li>Mario Galaxy</li>
+                <li>Nier automata</li>
+                <li>Persona 5</li>
+        </ul>
+        <h4>Strenghts</h4>
+        <ul>
+            <li>Good at sports</li>
+            <li>Learn quickly</li>
+            <li>Resolve problems easy</li>
+            <li>Creative</li>
+        </ul>
+        <img src="{{ url_for('static', filename='img/nintendoLogo.png') }}" alt="Nintendo logo">
+    </div>
+</div>
+{% endblock content %}
